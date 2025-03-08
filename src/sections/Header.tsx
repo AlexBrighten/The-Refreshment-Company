@@ -1,11 +1,12 @@
 import Image from "next/image";
 import ArrowRight from "../assets/arrow-right.svg";
 import Logo from "../assets/logosaas.png";
+import MenuIcon from "../assets/menu.svg";
 
 
 export const Header = () => {
   return (
-    <header>
+    <header className="sticky top-0">
 
       <div className="flex justify-center items-center bg-black text-yellow-500 py-3 text-sm font-bold">
         <div className="inline-flex justify-center items-center gap-2">
@@ -15,13 +16,12 @@ export const Header = () => {
       </div>
 
       <div className="flex items-center justify-between bg-white py-2">
-      <div className="container flex items-center gap-2 font-bold">
-        <Image src={Logo} alt="logo" width={40} height={40} />
-        <p>
-          The Refreshment <br /> Company
-        </p>
-      </div>
-
+        <div className="container">
+          <div className="flex items-center justify-between">
+            <Image src={Logo} alt="logo" width={40} height={40} />
+            <MenuIcon className="h-5 w-5" />
+          </div>
+        </div>
       </div>
 
     </header>
