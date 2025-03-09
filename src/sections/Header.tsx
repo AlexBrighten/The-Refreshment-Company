@@ -15,12 +15,17 @@ export const Header = () => {
         </div>
       </div>
 
-      <div className="flex items-center justify-between bg-white py-2">
-        <div className="container">
-          <div className="flex items-center justify-between">
-            <Image src={Logo} alt="logo" width={40} height={40} />
-            <MenuIcon className="h-5 w-5" />
-          </div>
+      <div className="container flex bg-white justify-between items-center mt-5 py-5 rounded-xl">
+        <div>
+          <Image src={Logo} alt="Logo" width={35} height={35} />
+        </div>
+        <div className="font-bold text-2xl">
+          The Refreshment Company
+        </div>
+        <div className="flex">
+          <Image src={Logo} alt="Logo" width={30} height={30} />
+          <Image src={Logo} alt="Logo" width={30} height={30} />
+          <Image src={Logo} alt="Logo" width={30} height={30} />
         </div>
       </div>
 
